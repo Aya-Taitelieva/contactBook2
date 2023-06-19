@@ -1,0 +1,164 @@
+body {
+  background-position: center;
+  background-image: url(https://i.pinimg.com/564x/a9/a3/e1/a9a3e138385beb21fb7ff6637cfb5a27.jpg);
+  color: black;
+
+  /* background-size: cover; */
+}
+
+.todo-list {
+  width: 400px;
+  margin: 50px auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h1 {
+  width: 265px;
+  display: flex;
+  justify-content: center;
+}
+.h1 h1 {
+  color: black;
+}
+
+.add-todo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.image {
+  width: 100px;
+  border-radius: 15px;
+}
+
+.add-input,
+.add-input2,
+.add-input3,
+.add-input4 {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#edit-input,
+#edit-input2,
+#edit-input3,
+#edit-input4 {
+  margin-bottom: 5px;
+}
+
+#add-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: -10px;
+  margin-bottom: 50px;
+  background-color: #8aec44;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  width: 100vh;
+}
+
+.edit-btn,
+.delete-btn,
+.reset-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.edit-btn {
+  background-color: #ddd;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.reset-btn {
+  color: #fff;
+  background-color: orangered;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-header h3 {
+  color: black;
+}
+
+#close-modal {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+
+#edit-cancel,
+.edit-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10px;
+}

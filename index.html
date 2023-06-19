@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <button class="reset-btn">Reset</button>
+    <div class="todo-list">
+      <form class="add-todo">
+        <div class="inps">
+          <div class="h1"><h1>Contact Book</h1></div>
+
+          <input type="text" class="add-input" placeholder="Add name" />
+          <input type="text" class="add-input2" placeholder="Add surname" />
+          <input type="text" class="add-input3" placeholder="Add image-URL" />
+          <input type="text" class="add-input4" placeholder="Add phone" />
+        </div>
+
+        <div class="btn"><button id="add-submit">Add</button></div>
+      </form>
+      <div id="todo-container"></div>
+    </div>
+    <div class="modal" id="edit-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Edit Contact</h3>
+          <button id="close-modal">X</button>
+        </div>
+        <input type="text" id="edit-input" />
+        <input type="text" id="edit-input2" />
+        <input type="text" id="edit-input3" />
+        <input type="text" id="edit-input4" />
+        <div class="modal-footer">
+          <button id="edit-cancel">Cancel</button>
+          <button class="edit-submit">Save</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
